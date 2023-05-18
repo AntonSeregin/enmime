@@ -390,9 +390,15 @@ func (p MailBuilder) Build() (*Part, error) {
 	}
 	// Headers
 	h := root.Header
-	h.Set(hnMIMEVersion, "1.0")
+
+	// это нам не надо
+	//h.Set(hnMIMEVersion, "1.0")
+
 	h.Set("From", p.from.String())
-	h.Set("Subject", p.subject)
+
+	// почему то добавляет пустой сабджект, пока уберем
+	//h.Set("Subject", p.subject)
+
 	if len(p.to) > 0 {
 		h.Set("To", stringutil.JoinAddress(p.to))
 	}
@@ -402,11 +408,15 @@ func (p MailBuilder) Build() (*Part, error) {
 	if len(p.replyTo) > 0 {
 		h.Set("Reply-To", stringutil.JoinAddress(p.replyTo))
 	}
-	date := p.date
-	if date.IsZero() {
-		date = time.Now()
-	}
-	h.Set("Date", date.Format(time.RFC1123Z))
+
+	// дублиует дату.
+	/*
+		date := p.date
+		if date.IsZero() {
+			date = time.Now()
+		}
+		h.Set("Date", date.Format(time.RFC1123Z))
+	*/
 	for k, v := range p.header {
 		for _, s := range v {
 			h.Add(k, s)
