@@ -9,9 +9,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/jhillyerd/enmime/internal/coding"
-	"github.com/jhillyerd/enmime/internal/stringutil"
-	"github.com/jhillyerd/enmime/internal/textproto"
+	"github.com/AntonSeregin/enmimebuilder/internal/coding"
+	"github.com/AntonSeregin/enmimebuilder/internal/stringutil"
+	"github.com/AntonSeregin/enmimebuilder/internal/textproto"
 )
 
 // b64Percent determines the percent of non-ASCII characters enmime will tolerate before switching

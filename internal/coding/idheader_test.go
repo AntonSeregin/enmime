@@ -3,7 +3,7 @@ package coding_test
 import (
 	"testing"
 
-	"github.com/jhillyerd/enmime/internal/coding"
+	"github.com/AntonSeregin/enmimebuilder/internal/coding"
 )
 
 func TestFromIDHeader(t *testing.T) {

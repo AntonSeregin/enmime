@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jhillyerd/enmime"
-	"github.com/jhillyerd/enmime/internal/test"
+	"github.com/AntonSeregin/enmimebuilder"
+	"github.com/AntonSeregin/enmimebuilder/internal/test"
 )
 
 func TestPlainTextPart(t *testing.T) {

@@ -3,7 +3,7 @@ package enmime
 import (
 	"strings"
 
-	"github.com/jhillyerd/enmime/internal/textproto"
+	"github.com/AntonSeregin/enmimebuilder/internal/textproto"
 	"github.com/jhillyerd/enmime/mediatype"
 )
 

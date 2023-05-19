@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/jhillyerd/enmime"
-	"github.com/jhillyerd/enmime/dsn"
-	"github.com/jhillyerd/enmime/internal/textproto"
+	"github.com/AntonSeregin/enmimebuilder"
+	"github.com/AntonSeregin/enmimebuilder/dsn"
+	"github.com/AntonSeregin/enmimebuilder/internal/textproto"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

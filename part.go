@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/AntonSeregin/enmimebuilder/internal/coding"
+	"github.com/AntonSeregin/enmimebuilder/internal/textproto"
+	"github.com/AntonSeregin/enmimebuilder/mediatype"
 	"github.com/gogs/chardet"
-	"github.com/jhillyerd/enmime/internal/coding"
-	"github.com/jhillyerd/enmime/internal/textproto"
-	"github.com/jhillyerd/enmime/mediatype"
 
 	"github.com/pkg/errors"
 )

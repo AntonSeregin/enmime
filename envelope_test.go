@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/AntonSeregin/enmimebuilder"
+	"github.com/AntonSeregin/enmimebuilder/internal/test"
 	"github.com/go-test/deep"
-	"github.com/jhillyerd/enmime"
-	"github.com/jhillyerd/enmime/internal/test"
 )
 
 func TestParseHeaderOnly(t *testing.T) {

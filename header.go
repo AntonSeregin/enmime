@@ -8,10 +8,10 @@ import (
 	"net/mail"
 	"strings"
 
-	"github.com/jhillyerd/enmime/internal/coding"
-	"github.com/jhillyerd/enmime/internal/stringutil"
-	"github.com/jhillyerd/enmime/internal/textproto"
-	"github.com/jhillyerd/enmime/mediatype"
+	"github.com/AntonSeregin/enmimebuilder/internal/coding"
+	"github.com/AntonSeregin/enmimebuilder/internal/stringutil"
+	"github.com/AntonSeregin/enmimebuilder/internal/textproto"
+	"github.com/AntonSeregin/enmimebuilder/mediatype"
 
 	"github.com/pkg/errors"
 )

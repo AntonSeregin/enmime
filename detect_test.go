@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/jhillyerd/enmime/internal/textproto"
+	"github.com/AntonSeregin/enmimebuilder/internal/textproto"
 )
 
 func TestDetectSinglePart(t *testing.T) {
