@@ -1,4 +1,4 @@
-module github.com/jhillyerd/enmime
+module github.com/AntonSeregin/enmimebuilder
 
 go 1.18
 
