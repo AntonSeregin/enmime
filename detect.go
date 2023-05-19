@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/AntonSeregin/enmimebuilder/internal/textproto"
-	"github.com/jhillyerd/enmime/mediatype"
+	"github.com/AntonSeregin/enmimebuilder/mediatype"
 )
 
 // detectMultipartMessage returns true if the message has a recognized multipart Content-Type header

@@ -10,8 +10,8 @@ import (
 
 	"github.com/AntonSeregin/enmimebuilder/internal/coding"
 	"github.com/AntonSeregin/enmimebuilder/internal/textproto"
+	"github.com/AntonSeregin/enmimebuilder/mediatype"
 	"github.com/jaytaylor/html2text"
-	"github.com/jhillyerd/enmime/mediatype"
 
 	"github.com/pkg/errors"
 )

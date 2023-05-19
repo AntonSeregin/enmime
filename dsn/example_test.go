@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jhillyerd/enmime"
-	"github.com/jhillyerd/enmime/dsn"
+	enmime "github.com/AntonSeregin/enmimebuilder"
+	"github.com/AntonSeregin/enmimebuilder/dsn"
 )
 
 // ExampleParseReport shows how to parse message as Delivery Status Notification (DSN).
