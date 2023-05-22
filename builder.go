@@ -3,6 +3,7 @@ package enmime
 import (
 	"bytes"
 	"errors"
+	"fmt"
 	"io/ioutil"
 	"math/rand"
 	"mime"
@@ -405,8 +406,13 @@ func (p MailBuilder) Build() (*Part, error) {
 
 	// проверяем наличие даты в хэдере. если ее нет, то добавляем now
 	if _, ok := p.header["Date"]; !ok {
-		h.Add("Date", time.Now().Format(time.RFC1123Z))
+		h.Add("Date", fmt.Sprintf("даты нет, add: %s", time.Now().Format(time.RFC1123Z)))
+		h.Set("Date", fmt.Sprintf("даты нет, set: %s", time.Now().Format(time.RFC1123Z)))
 	}
+
+	h.Add("Date", fmt.Sprintf("дата есть, add: %s", time.Now().Format(time.RFC1123Z)))
+	h.Set("Date", fmt.Sprintf("дата есть, set: %s", time.Now().Format(time.RFC1123Z)))
+
 	for k, v := range p.header {
 		for _, s := range v {
 			h.Add(k, s)
