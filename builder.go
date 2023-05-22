@@ -405,7 +405,7 @@ func (p MailBuilder) Build() (*Part, error) {
 
 	// проверяем наличие даты в хэдере. если ее нет, то добавляем now
 	if _, ok := p.header["Date"]; !ok {
-		h.Set("Date", time.Now().Format(time.RFC1123Z))
+		h.Add("Date", time.Now().Format(time.RFC1123Z))
 	}
 	for k, v := range p.header {
 		for _, s := range v {
